@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zoom Auto Opener for Google Calendar — プライバシーポリシー</title>
+<style>
+  body{font-family:-apple-system,"Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+       color:#1a1a1a;line-height:1.8;max-width:760px;margin:40px auto;padding:0 20px;}
+  h1{font-size:24px;border-bottom:2px solid #2D8CFF;padding-bottom:10px;}
+  h2{font-size:18px;margin-top:32px;color:#174; }
+  h2{color:#123;}
+  .meta{color:#666;font-size:13px;}
+  ul{padding-left:20px;}
+  li{margin:6px 0;}
+  a{color:#2D8CFF;}
+  code{background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:90%;}
+  footer{margin-top:40px;color:#666;font-size:13px;border-top:1px solid #e5e7eb;padding-top:16px;}
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー</h1>
+<p class="meta">対象：ブラウザ拡張機能「Zoom Auto Opener for Google Calendar」<br>
+最終更新日：2026年7月14日</p>
+
+<p>本拡張機能（以下「本拡張」）は、Googleカレンダーの予定を確認し、予定の開始前に、その予定に記載されたZoomミーティングのURLを自動的に開くことを目的としています。本ポリシーは、本拡張が取り扱う情報とその利用方法を説明するものです。</p>
+
+<h2>1. 基本方針</h2>
+<ul>
+  <li>本拡張のすべての処理は、お使いの端末（ブラウザ）内で完結します。</li>
+  <li>開発者が運用するサーバーは存在せず、あなたのカレンダー情報や個人情報を開発者または第三者に送信・保存することは一切ありません。</li>
+  <li>広告、トラッキング、アクセス解析などのツールは使用していません。</li>
+</ul>
+
+<h2>2. 取得・利用する情報</h2>
+<ul>
+  <li><strong>Googleカレンダーのデータ（読み取り専用）</strong>：<code>calendar.readonly</code> 権限により、予定の開始時刻・タイトル・場所・説明・会議情報を読み取ります。これは、予定内のZoomリンクを検出し、開くタイミングを判定するためだけに使用します。予定の内容を変更・作成・削除することはありません。</li>
+  <li><strong>認証情報</strong>：Chromeの Identity API を通じて、あなた自身のGoogleアカウントのOAuthアクセストークンを取得し、Google Calendar API の呼び出しに使用します。トークンはChrome／Googleが管理し、本拡張が独自に保存することはありません。</li>
+  <li><strong>設定および動作記録</strong>：「開始何分前に開くか」などの設定と、同じ予定を二重に開かないための処理済み記録を、ブラウザの <code>chrome.storage</code> に保存します。設定はChromeの同期機能により、あなたのGoogleアカウントに紐づく端末間で同期される場合があります。</li>
+</ul>
+
+<h2>3. データの保存場所と通信</h2>
+<ul>
+  <li>カレンダーデータの取得は、あなたのブラウザからGoogleの公式API（<code>googleapis.com</code>）へ直接HTTPS通信する形でのみ行われます。</li>
+  <li>取得したデータは処理のために一時的にメモリ上で扱われるのみで、外部へ送信されません。</li>
+  <li>設定・処理済み記録は、あなたのブラウザ内（<code>chrome.storage</code>）にのみ保存されます。</li>
+</ul>
+
+<h2>4. 第三者への提供</h2>
+<p>本拡張は、取得したいかなる情報も第三者に販売・譲渡・提供しません。</p>
+
+<h2>5. Google ユーザーデータの限定利用（Limited Use）</h2>
+<p>本拡張によるGoogleユーザーデータの取得・利用・転送は、Limited Use要件を含む
+<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a> に準拠します。データは、上記の機能を提供する目的以外には使用しません。</p>
+
+<h2>6. データの保持と削除</h2>
+<ul>
+  <li>処理済み記録は約6時間後に自動的に削除されます。</li>
+  <li>設定および記録は、本拡張をアンインストールするか、Chromeの拡張データを消去することで削除されます。</li>
+  <li>Googleアカウントへのアクセス許可は、
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Googleアカウントのサードパーティアクセス設定</a>
+    からいつでも取り消せます。</li>
+</ul>
+
+<h2>7. セキュリティ</h2>
+<p>外部との通信はGoogle公式APIへのHTTPS通信に限られます。本拡張は外部サーバーへデータを送信しないため、通信経路上での情報流出のリスクを最小化しています。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>本ポリシーは必要に応じて改定することがあります。変更があった場合は、本ページを更新します。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>本拡張および本ポリシーに関するお問い合わせは、以下までご連絡ください。<br>
+メールアドレス：<strong>your-email@example.com</strong></p>
+
+<footer>
+© 2026 Zoom Auto Opener for Google Calendar
+</footer>
+</body>
+</html>
